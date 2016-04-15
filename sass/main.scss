@@ -171,157 +171,160 @@ header{
 			}
 		}
 	}	
-#Prestations{
-	width: 100%;
-	font-size: 12px;
-	background-color: #f7f7f7;
-		&:after{
-		    content: "";
-		    display: table;
-		    clear: both;
-    	}
-	h2{
-		padding: 28px 0	;
-		text-align: center;
-		font-size: 16px;
-		.colorGold{
-			color: #CB9B2B;
-			font-style: italic;
-		}
-	}
-	#firstPresta{
-		width:100%;
-		#imgFirstPresta{
-			width:100%;
-			height: 100%;
-			margin-bottom: 5px;
-		}
-		p{
-			margin-bottom: 10px;
-			padding-left: 5px;
-			.colorGold{
-				color: #CB9B2B;
-				font-style: italic;
-			}
-		}
-	}
-	#secondPresta{
-		width: 49%;
-		float: right;
-		#imgSecondPresta{
-			width:100%;
-			height: 100%;
-			margin-bottom: 5px;
-		}
-		p{
-			margin-bottom: 10px;
-			padding-left: 5px;
-			.colorGold{
-				color: #CB9B2B;
-				font-style: italic;
-			}
-		}
-	}
-	#thirdPresta{
-		float: left;
-		width: 49%;
-		#imgThirdPresta{
-			width: 100%;
-			height: 100%;
-			margin-bottom: 5px;
-		}
-		p{
-			margin-bottom: 10px;
-			padding-left: 5px;
-			.colorGold{
-				color: #CB9B2B;
-				font-style: italic;
-			}
-		}
-	}
-	#fourthPresta{
-		width:100%;
-
-		#imgFourthPresta{
-			width:100%;
-			height: 100%;
-			margin-bottom: 5px;
-		}
-		p{
-			margin-bottom: 10px;
-			padding-left: 5px;
-			.colorGold{
-				color: #CB9B2B;
-				font-style: italic;
-			}
-		}
-	}
-	#fifthPresta{
-		width:100%;
-		#imgFifthPresta{
-			width:100%;
-			height: 100%;
-			margin-bottom: 5px;
-
-		}
-		p{
-			margin-bottom: 10px;
-			padding-left: 5px;
-			.colorGold{
-				color: #CB9B2B;
-				font-style: italic;
-			}
-		}
-	}
-	#sixthPresta{
-		display: none;
-	}
-	#allPresta{
+	#Prestations{
 		width: 100%;
-		height: 75px;
-		box-sizing: border-box;
-	 	text-align: center;
-	 	margin-top: 5%;
-	 	padding: (11rem/16) (11rem/16);
-
-	 	button{
-	 		position: relative;
-	 		text-align: center;
-	 		border: 1px solid black;
-	 		width: 100%;	
-	 		height: 100%;
-	 		font-size: 13px;
-	 		background-color: #fff;
-	 		color: black; 
-	 		#arrowPresta{
-	 			position: absolute;
-	 			vertical-align: middle;
-	 			margin-left: 22px;
-	 			width: 20px;
-	 			height: 20px;
-	 		}
-	 	}
-	}
-	@media (min-width:768px) and (max-width: 980px){
+		font-size: 12px;
+		background-color: #f7f7f7;
+			&:after{
+			    content: "";
+			    display: table;
+			    clear: both;
+	    	}
 		h2{
-			font-size: 28px;
-		}
-		div{
-			p{
-				font-size: 20px;
+			padding: 28px 0	;
+			text-align: center;
+			font-size: 16px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
 			}
+		}
+		#firstPresta{
+			width:100%;
+			#imgFirstPresta{
+				width:100%;
+				height: 100%;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				.colorGold{
+					color: #CB9B2B;
+					font-style: italic;
+				}
+			}
+		}
+		#secondPresta{
+			width: 49%;
+			float: right;
+			#imgSecondPresta{
+				width:100%;
+				height: 100%;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				.colorGold{
+					color: #CB9B2B;
+					font-style: italic;
+				}
+			}
+		}
+		#thirdPresta{
+			float: left;
+			width: 49%;
+			#imgThirdPresta{
+				width: 100%;
+				height: 100%;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				.colorGold{
+					color: #CB9B2B;
+					font-style: italic;
+				}
+			}
+		}
+		#fourthPresta{
+			width:100%;
+
+			#imgFourthPresta{
+				width:100%;
+				height: 100%;
+				margin-bottom: 5px;
+			}
+			p{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				.colorGold{
+					color: #CB9B2B;
+					font-style: italic;
+				}
+			}
+		}
+		#fifthPresta{
+			width:100%;
+			#imgFifthPresta{
+				width:100%;
+				height: 100%;
+				margin-bottom: 5px;
+
+			}
+			p{
+				margin-bottom: 10px;
+				padding-left: 5px;
+				.colorGold{
+					color: #CB9B2B;
+					font-style: italic;
+				}
+			}
+		}
+		#sixthPresta{
+			display: none;
 		}
 		#allPresta{
-			height: 150px;
-			padding: (11rem/8) (11rem/8);
-			button{
-	 			font-size: 26px;
-	 			color: black; 
-	 			background-color: #fff;				
+			width: 100%;
+			height: 75px;
+			box-sizing: border-box;
+		 	text-align: center;
+		 	margin-top: 5%;
+		 	padding: (11rem/16) (11rem/16);
+
+		 	button{
+		 		position: relative;
+		 		text-align: center;
+		 		border: 1px solid black;
+		 		width: 100%;	
+		 		height: 100%;
+		 		font-size: 13px;
+		 		background-color: #fff;
+		 		color: black; 
+		 		#arrowPresta{
+		 			position: absolute;
+		 			vertical-align: middle;
+		 			margin-left: 22px;
+		 			width: 20px;
+		 			height: 20px;
+		 		}
+		 	}
+		}
+		@media (min-width:768px) and (max-width: 980px){
+			h2{
+				font-size: 28px;
+			}
+			div{
+				p{
+					font-size: 20px;
+				}
+			}
+			#allPresta{
+				height: 150px;
+				padding: (11rem/8) (11rem/8);
+				button{
+		 			font-size: 26px;
+		 			color: black; 
+		 			background-color: #fff;				
+				}
 			}
 		}
 	}
-}
+	#reservations{
+		display: none;
+	}
 }
 
 
@@ -767,7 +770,7 @@ header{
 			clear: both;
 	   	}
 	    p{
-			margin: 12px 0 26px 0;
+			margin: 12px 0 15px 0;
 			padding-left: 5px;
 			font-size: 18px;
 			.colorGold{
@@ -777,7 +780,6 @@ header{
 	    #grille{
 	    	margin: auto;
 	    	width: 952px;
-	    	height: 1500px;
 			h2{
 				padding: 115px 0	;
 				text-align: center;
@@ -825,9 +827,10 @@ header{
 				}
 			}
 			#allPresta{
+				clear: both;
 				box-sizing: border-box;
-			 	margin-top: 5%;
-			 	padding: (11rem/16) (11rem/16);
+			 	padding: (11rem/4) (11rem/4);
+			 	text-align: center;
 
 			 	button{
 			 		position: relative;
@@ -846,6 +849,36 @@ header{
 			 		}
 			 	}
 			}
+		}
+	}
+	#reservations{
+		width:100%;
+		background-color: black;
+		color: white;
+		h2{
+			text-align: center;
+			font-size: 48px;
+			padding:80px;
+
+			.colorGold{
+				color: #CB9B2B;
+			}
+		}
+		#ListesReservations
+		{	
+			width: 70%;
+			margin: auto;
+			text-align: center;
+			ul{
+				font-size: 18px;
+				padding-right: 80px;
+				display: inline-block;
+				text-align: left;
+				margin-bottom: 70px;
+				li{
+					padding:10px;
+				}
+			}			
 		}
 	}
 }
