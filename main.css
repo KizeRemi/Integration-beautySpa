@@ -1,0 +1,566 @@
+body {
+  font-family: 'ralewaylight';
+  margin: 0px 0px 0px 0px; }
+
+header {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  header #userBanniere {
+    display: none; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  header #openMenu {
+    height: 5%;
+    width: 5%;
+    float: left;
+    padding: 10px 10px 10px 10px; }
+  header #title {
+    padding-top: 10px;
+    margin: auto; }
+    header #title img {
+      width: 50%; }
+    header #title .colorGold {
+      color: #B99100; }
+  header #search {
+    height: 5%;
+    width: 5%;
+    float: right;
+    padding: 10px 10px 10px 10px; }
+
+@media (max-width: 980px) {
+  #banniere #textBannDesktop {
+    display: none; }
+  #navMenu {
+    width: 75%;
+    background-color: #fefdfb;
+    border-style: solid;
+    margin-top: 12%;
+    text-align: left;
+    border-color: #F2F2F2;
+    left: -1200px;
+    position: absolute;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+    z-index: 100;
+    overflow: auto; }
+    #navMenu.opened {
+      left: 0px; }
+    #navMenu #menu #openBeaute, #navMenu #menu #openMassage, #navMenu #menu #openForme, #navMenu #menu #openCoiffure {
+      box-sizing: border-box;
+      text-decoration: none;
+      color: black;
+      width: 100%;
+      border: 1px solid #F2F2F2;
+      padding-left: 5%;
+      position: relative; }
+      #navMenu #menu #openBeaute a, #navMenu #menu #openMassage a, #navMenu #menu #openForme a, #navMenu #menu #openCoiffure a {
+        text-decoration: none;
+        height: 100%;
+        line-height: 1.5625;
+        color: black;
+        vertical-align: middle; }
+      #navMenu #menu #openBeaute i, #navMenu #menu #openMassage i, #navMenu #menu #openForme i, #navMenu #menu #openCoiffure i {
+        box-sizing: border-box;
+        height: 100%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding-left: 5px;
+        vertical-align: middle;
+        border: 0px solid #F2F2F2;
+        border-width: 0px 0px 0px 1px; }
+      #navMenu #menu #openBeaute #menuBeaute, #navMenu #menu #openMassage #menuBeaute, #navMenu #menu #openForme #menuBeaute, #navMenu #menu #openCoiffure #menuBeaute {
+        display: none;
+        padding-left: 10%; }
+        #navMenu #menu #openBeaute #menuBeaute .sousMenuTitre, #navMenu #menu #openMassage #menuBeaute .sousMenuTitre, #navMenu #menu #openForme #menuBeaute .sousMenuTitre, #navMenu #menu #openCoiffure #menuBeaute .sousMenuTitre {
+          color: #CB9B2B; }
+        #navMenu #menu #openBeaute #menuBeaute.slide, #navMenu #menu #openMassage #menuBeaute.slide, #navMenu #menu #openForme #menuBeaute.slide, #navMenu #menu #openCoiffure #menuBeaute.slide {
+          display: block; }
+        #navMenu #menu #openBeaute #menuBeaute .liens, #navMenu #menu #openMassage #menuBeaute .liens, #navMenu #menu #openForme #menuBeaute .liens, #navMenu #menu #openCoiffure #menuBeaute .liens {
+          padding-left: 15%; }
+        #navMenu #menu #openBeaute #menuBeaute #planBeaute, #navMenu #menu #openMassage #menuBeaute #planBeaute, #navMenu #menu #openForme #menuBeaute #planBeaute, #navMenu #menu #openCoiffure #menuBeaute #planBeaute {
+          display: none; }
+      #navMenu #menu #openBeaute #menuCoiffure, #navMenu #menu #openMassage #menuCoiffure, #navMenu #menu #openForme #menuCoiffure, #navMenu #menu #openCoiffure #menuCoiffure {
+        display: none;
+        padding-left: 10%; }
+        #navMenu #menu #openBeaute #menuCoiffure .sousMenuTitre, #navMenu #menu #openMassage #menuCoiffure .sousMenuTitre, #navMenu #menu #openForme #menuCoiffure .sousMenuTitre, #navMenu #menu #openCoiffure #menuCoiffure .sousMenuTitre {
+          color: #CB9B2B; }
+        #navMenu #menu #openBeaute #menuCoiffure.slide, #navMenu #menu #openMassage #menuCoiffure.slide, #navMenu #menu #openForme #menuCoiffure.slide, #navMenu #menu #openCoiffure #menuCoiffure.slide {
+          display: block; }
+        #navMenu #menu #openBeaute #menuCoiffure .liens, #navMenu #menu #openMassage #menuCoiffure .liens, #navMenu #menu #openForme #menuCoiffure .liens, #navMenu #menu #openCoiffure #menuCoiffure .liens {
+          padding-left: 15%; } }
+  @media (max-width: 980px) and (min-width: 768px) and (max-width: 980px) {
+    #navMenu #menu li {
+      font-size: 30px; } }
+
+@media (max-width: 980px) {
+  #infosClients ul {
+    margin: 25px 20px;
+    font-size: 11px;
+    height: 100%; }
+    #infosClients ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #infosClients ul #infosAdresse, #infosClients ul #infosRendezvous, #infosClients ul #infosPrestation, #infosClients ul #infosAvis {
+      width: 50%;
+      float: left; }
+      #infosClients ul #infosAdresse img, #infosClients ul #infosRendezvous img, #infosClients ul #infosPrestation img, #infosClients ul #infosAvis img {
+        height: 100%;
+        width: 10%;
+        float: left; }
+      #infosClients ul #infosAdresse p, #infosClients ul #infosRendezvous p, #infosClients ul #infosPrestation p, #infosClients ul #infosAvis p {
+        margin-bottom: 20px;
+        width: 85%;
+        font-size: 16px;
+        float: right;
+        color: #c4c4c4;
+        line-height: 22px; }
+        #infosClients ul #infosAdresse p .colorGold, #infosClients ul #infosRendezvous p .colorGold, #infosClients ul #infosPrestation p .colorGold, #infosClients ul #infosAvis p .colorGold {
+          color: #CB9B2B; }
+        #infosClients ul #infosAdresse p .sizeNumber, #infosClients ul #infosRendezvous p .sizeNumber, #infosClients ul #infosPrestation p .sizeNumber, #infosClients ul #infosAvis p .sizeNumber {
+          font-size: 18px; }
+    #infosClients ul #infosRendezvous {
+      clear: left; } }
+
+#banniere {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bordor-color: black; }
+  #banniere img {
+    width: 100%;
+    display: block;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-width: 1px 0px 0px 0px; }
+  #banniere div {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 50%;
+    height: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right; }
+    #banniere div .textItalic {
+      font-style: italic; }
+    @media (min-width: 768px) and (max-width: 980px) {
+      #banniere div {
+        font-size: 26px; } }
+
+#Wrapper {
+  position: relative; }
+  #Wrapper #form {
+    background-color: #F2F2F2;
+    width: 100%; }
+    #Wrapper #form input {
+      box-sizing: border-box;
+      width: 100%;
+      height: 50px;
+      border-style: solid;
+      border-color: #F2F2F2;
+      text-align: left;
+      font-size: 14px;
+      padding-left: 17%;
+      border-width: 1px 0px 1px 0px; }
+    #Wrapper #form #town {
+      background-image: url("assets/townform.svg");
+      background-repeat: no-repeat;
+      background-position: 10%;
+      background-size: 20px 20px; }
+    #Wrapper #form #date {
+      background-image: url("assets/calendarform.svg");
+      background-repeat: no-repeat;
+      background-position: 10%;
+      background-size: 20px 20px; }
+    #Wrapper #form #reservation {
+      background-image: url("assets/searchform.svg");
+      background-repeat: no-repeat;
+      background-position: 10%;
+      background-size: 20px 20px; }
+    #Wrapper #form #submitForm {
+      width: 100%;
+      height: 75px;
+      box-sizing: border-box;
+      background-color: grey;
+      text-align: center;
+      padding: 0.6875rem 0.6875rem; }
+      #Wrapper #form #submitForm button {
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        font-size: 17px;
+        background-color: black;
+        color: white; }
+    @media (min-width: 768px) {
+      #Wrapper #form {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 30px 0;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 0,2;
+        font-size: 14px; }
+        #Wrapper #form #reservation {
+          width: 25%;
+          height: 60px;
+          padding-left: 5%;
+          margin-left: 7%;
+          float: left; }
+        #Wrapper #form #town {
+          width: 20%;
+          height: 60px;
+          padding-left: 5%;
+          float: left; }
+        #Wrapper #form #date {
+          width: 20%;
+          height: 60px;
+          padding-left: 5%;
+          float: left; }
+        #Wrapper #form #submitForm {
+          background-color: black;
+          width: 20%;
+          height: 60px;
+          margin-left: 1%;
+          float: left; }
+          #Wrapper #form #submitForm button {
+            text-transform: uppercase;
+            width: 100%;
+            height: 100%;
+            border: 0px;
+            font-size: 16px;
+            background-color: black;
+            color: white; } }
+
+#Prestations {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f7f7f7; }
+  #Prestations:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #Prestations h2 {
+    padding: 28px 0;
+    text-align: center;
+    font-size: 16px; }
+    #Prestations h2 .colorGold {
+      color: #CB9B2B;
+      font-style: italic; }
+  #Prestations #firstPresta {
+    width: 100%; }
+    #Prestations #firstPresta #imgFirstPresta {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px; }
+    #Prestations #firstPresta p {
+      margin-bottom: 10px;
+      padding-left: 5px; }
+      #Prestations #firstPresta p .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+  #Prestations #secondPresta {
+    width: 49%;
+    float: right; }
+    #Prestations #secondPresta #imgSecondPresta {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px; }
+    #Prestations #secondPresta p {
+      margin-bottom: 10px;
+      padding-left: 5px; }
+      #Prestations #secondPresta p .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+  #Prestations #thirdPresta {
+    float: left;
+    width: 49%; }
+    #Prestations #thirdPresta #imgThirdPresta {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px; }
+    #Prestations #thirdPresta p {
+      margin-bottom: 10px;
+      padding-left: 5px; }
+      #Prestations #thirdPresta p .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+  #Prestations #fourthPresta {
+    width: 100%; }
+    #Prestations #fourthPresta #imgFourthPresta {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px; }
+    #Prestations #fourthPresta p {
+      margin-bottom: 10px;
+      padding-left: 5px; }
+      #Prestations #fourthPresta p .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+  #Prestations #fifthPresta {
+    width: 100%; }
+    #Prestations #fifthPresta #imgFifthPresta {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px; }
+    #Prestations #fifthPresta p {
+      margin-bottom: 10px;
+      padding-left: 5px; }
+      #Prestations #fifthPresta p .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+  #Prestations #allPresta {
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 5%;
+    padding: 0.6875rem 0.6875rem; }
+    #Prestations #allPresta button {
+      position: relative;
+      text-align: center;
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+      font-size: 13px;
+      background-color: #fff;
+      color: black; }
+      #Prestations #allPresta button #arrowPresta {
+        position: absolute;
+        vertical-align: middle;
+        margin-left: 22px;
+        width: 20px;
+        height: 20px; }
+  @media (min-width: 768px) and (max-width: 980px) {
+    #Prestations h2 {
+      font-size: 28px; }
+    #Prestations div p {
+      font-size: 20px; }
+    #Prestations #allPresta {
+      height: 150px;
+      padding: 1.375rem 1.375rem; }
+      #Prestations #allPresta button {
+        font-size: 26px;
+        color: black;
+        background-color: #fff; } }
+
+#reseauxSociaux {
+  width: 100%;
+  font-size: 24px;
+  border: solid #f7f7f7;
+  border-width: 0px 0px 1px 0px;
+  text-align: center;
+  padding: 40px 0; }
+  #reseauxSociaux .colorGold {
+    color: #CB9B2B; }
+  #reseauxSociaux h1 {
+    text-align: center;
+    padding-bottom: 50px; }
+  #reseauxSociaux #imgfacebook {
+    width: 10px; }
+  #reseauxSociaux img {
+    vertical-align: middle;
+    margin: 15px;
+    width: 21px; }
+  @media (min-width: 768px) and (max-width: 980px) {
+    #reseauxSociaux {
+      font-size: 48px; }
+      #reseauxSociaux #imgfacebook {
+        width: 20px; }
+      #reseauxSociaux img {
+        width: 40px;
+        margin: 30px; } }
+
+#copyright {
+  padding: 5% 0 30% 0;
+  text-align: center;
+  font-size: 10px; }
+  @media (min-width: 768px) and (max-width: 980px) {
+    #copyright {
+      font-size: 20px; } }
+
+@media (min-width: 980px) {
+  header #userBanniere {
+    display: block;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 38px; }
+    header #userBanniere #usersSection {
+      float: left;
+      padding-top: 10px;
+      padding-left: 21px; }
+      header #userBanniere #usersSection #askSalon, header #userBanniere #usersSection #Inscription {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11px;
+        font-weight: 900; }
+      header #userBanniere #usersSection #Inscription {
+        border: none;
+        margin-left: 10px;
+        position: relative;
+        width: 112px;
+        height: 20px;
+        color: white;
+        background-color: #000; }
+        header #userBanniere #usersSection #Inscription #arrowPresta {
+          position: absolute;
+          margin-left: 2px;
+          width: 10px;
+          height: 10px; }
+    header #userBanniere #reseauxSection {
+      float: right;
+      padding-top: 10px;
+      padding-right: 21px; }
+      header #userBanniere #reseauxSection #telephone, header #userBanniere #reseauxSection .fb-like, header #userBanniere #reseauxSection #download, header #userBanniere #reseauxSection #connexion {
+        padding-left: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 11px;
+        font-weight: 900; }
+        header #userBanniere #reseauxSection #telephone img, header #userBanniere #reseauxSection .fb-like img, header #userBanniere #reseauxSection #download img, header #userBanniere #reseauxSection #connexion img {
+          vertical-align: middle;
+          padding: 0px 5px;
+          width: 13px;
+          height: 20px; }
+  header #openMenu {
+    display: none; }
+  header #title {
+    position: absolute;
+    left: 5px;
+    z-index: 200; }
+  header #search {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    margin-top: 5%;
+    z-index: 200; }
+  header #navMenu {
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+    z-index: 120; }
+    header #navMenu > ul {
+      position: relative; }
+    header #navMenu a {
+      text-decoration: none;
+      height: 100%;
+      line-height: 1.5625;
+      color: black;
+      vertical-align: middle; }
+    header #navMenu a:hover {
+      color: #CB9B2B; }
+    header #navMenu .submenu {
+      display: none;
+      transform: translateX(-50%); }
+      header #navMenu .submenu .titlesubmenu {
+        float: left;
+        width: 20%;
+        text-align: left;
+        padding-left: 40px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        font-size: 18px; }
+        header #navMenu .submenu .titlesubmenu .sousMenuTitre {
+          color: #CB9B2B; }
+      header #navMenu .submenu .titlesubmenu:nth-child(5) {
+        clear: left; }
+    header #navMenu .liens {
+      float: left;
+      width: 100%;
+      padding-top: 20px;
+      font-size: 13px; }
+      header #navMenu .liens li:last-child {
+        padding-top: 10px;
+        text-decoration: underline; }
+        header #navMenu .liens li:last-child a:hover {
+          color: #CB9B2B; }
+    header #navMenu #openBeaute, header #navMenu #openCoiffure, header #navMenu #openMassage, header #navMenu #openForme {
+      display: inline-block;
+      padding-left: 40px; }
+      header #navMenu #openBeaute #menuBeaute, header #navMenu #openCoiffure #menuBeaute, header #navMenu #openMassage #menuBeaute, header #navMenu #openForme #menuBeaute {
+        position: absolute;
+        background-color: white;
+        border-style: solid;
+        border-color: #bebebe;
+        border-width: 1px;
+        width: 800px;
+        left: 50%; }
+        header #navMenu #openBeaute #menuBeaute.slide, header #navMenu #openCoiffure #menuBeaute.slide, header #navMenu #openMassage #menuBeaute.slide, header #navMenu #openForme #menuBeaute.slide {
+          display: block; }
+      header #navMenu #openBeaute i, header #navMenu #openCoiffure i, header #navMenu #openMassage i, header #navMenu #openForme i {
+        display: none; }
+    header #navMenu #planBeaute {
+      width: 100%;
+      clear: both;
+      padding: 45px 0; }
+      header #navMenu #planBeaute button {
+        width: 295px;
+        height: 50px;
+        color: white;
+        border: none;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 13px;
+        background-color: black; }
+        header #navMenu #planBeaute button img {
+          width: 15px;
+          height: 15px; }
+  #Wrapper #form #reservation {
+    width: 17%;
+    margin-left: 12%; }
+  #Wrapper #form #submitForm {
+    width: 15%; }
+  #banniere #textBannMobile {
+    display: none; }
+  #banniere div {
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    top: 30%;
+    height: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px; }
+    #banniere div p {
+      padding-top: 40px;
+      font-size: 18px; }
+  #infosClients ul {
+    padding: 50px 10%;
+    font-size: 11px;
+    height: 100%;
+    background-color: black;
+    text-align: center; }
+    #infosClients ul #infosAdresse, #infosClients ul #infosRendezvous, #infosClients ul #infosPrestation, #infosClients ul #infosAvis {
+      width: 20%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      padding-right: 30px; }
+      #infosClients ul #infosAdresse img, #infosClients ul #infosRendezvous img, #infosClients ul #infosPrestation img, #infosClients ul #infosAvis img {
+        height: 100%;
+        width: 10%;
+        float: left; }
+      #infosClients ul #infosAdresse p, #infosClients ul #infosRendezvous p, #infosClients ul #infosPrestation p, #infosClients ul #infosAvis p {
+        margin-bottom: 20px;
+        width: 85%;
+        font-size: 22px;
+        float: right;
+        color: #c4c4c4;
+        line-height: 22px; }
+        #infosClients ul #infosAdresse p .colorGold, #infosClients ul #infosRendezvous p .colorGold, #infosClients ul #infosPrestation p .colorGold, #infosClients ul #infosAvis p .colorGold {
+          color: #CB9B2B; }
+        #infosClients ul #infosAdresse p .sizeNumber, #infosClients ul #infosRendezvous p .sizeNumber, #infosClients ul #infosPrestation p .sizeNumber, #infosClients ul #infosAvis p .sizeNumber {
+          font-size: 36px; }
+        #infosClients ul #infosAdresse p .descriptionsInfos, #infosClients ul #infosRendezvous p .descriptionsInfos, #infosClients ul #infosPrestation p .descriptionsInfos, #infosClients ul #infosAvis p .descriptionsInfos {
+          font-size: 14px; }
+    #infosClients ul #infosRendezvous {
+      clear: left; } }
+
+/*# sourceMappingURL=main.css.map */

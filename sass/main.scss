@@ -1,0 +1,742 @@
+
+body{
+	font-family: 'ralewaylight';
+	margin: 0px 0px 0px 0px;
+}
+
+header{
+	#userBanniere{
+		display: none;
+	}
+	width: 100%;
+	height:100%;
+    text-align: center;
+
+    &:after{
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+
+	#openMenu{
+		height: 5%;
+		width: 5%;	
+		float: left;
+		padding: 10px 10px 10px 10px;
+	}
+	#title{
+		padding-top: 10px;
+		margin: auto;
+		img{
+			width:50%;
+		}
+		.colorGold{
+			color: #B99100;
+		}
+	}
+	#search{
+		height: 5%;
+		width: 5%;		
+		float: right;
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+@media (max-width: 980px){
+	#banniere #textBannDesktop{
+		display: none;
+	}
+	#navMenu{
+		width:75%;
+		background-color: #fefdfb;
+		border-style: solid;
+		margin-top: 12%;
+		text-align: left;
+		border-color: #F2F2F2;
+	    left:-1200px;
+	    position: absolute;
+	    -webkit-transition: left 0.3s;
+		transition: left 0.3s;
+		z-index: 100;
+
+		&.opened{
+	    	left:0px;
+		}
+		overflow: auto;
+		#menu{
+			#openBeaute,#openMassage,#openForme,#openCoiffure{
+				box-sizing: border-box;
+				text-decoration: none;
+				color:black;
+				width:100%;
+				border: 1px solid #F2F2F2;
+				padding-left: 5%;
+				position: relative;
+				a{
+					text-decoration:none;
+					height: 100%;
+					line-height: 1.5625;
+						color: black;
+						vertical-align: middle;
+				}
+				i{
+					box-sizing: border-box;
+					height: 100%;
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					padding-left: 5px;
+					vertical-align: middle;
+					border: 0px solid #F2F2F2;
+					border-width: 0px 0px 0px 1px;
+				}
+				#menuBeaute{
+					display: none;
+					padding-left: 10%;
+					.sousMenuTitre{
+						color: #CB9B2B;
+					}
+			    	&.slide{
+				    	display: block;
+			    	}
+			    	.liens{
+			    		padding-left: 15%;
+			    	}	
+			    	#planBeaute{
+			    		display: none;
+			    	}
+				}
+				#menuCoiffure{
+					display: none;
+					padding-left: 10%;
+					.sousMenuTitre{
+						color: #CB9B2B;
+					}
+			    	&.slide{
+				    	display: block;
+			    	}
+			    	.liens{
+			    		padding-left: 15%;
+			    	}	
+				}
+			}
+			@media (min-width:768px) and (max-width: 980px){
+				li{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	#infosClients{
+		ul{
+			margin:25px 20px;
+			font-size: 11px;
+			height: 100%;
+			&:after{
+			    content: "";
+			    display: table;
+			    clear: both;
+	    	}
+			#infosAdresse, #infosRendezvous, #infosPrestation, #infosAvis{
+				width: 50%;
+				float: left;
+
+				img{
+					height: 100%;
+					width: 10%;
+					float: left;
+				}	
+				p{
+					margin-bottom: 20px;
+					width:85%;
+					font-size: 16px;
+					float: right;
+					color: #c4c4c4;
+					line-height: 22px;
+					.colorGold{
+						color: #CB9B2B;
+					}
+					.sizeNumber{
+						font-size: 18px;
+					}
+
+				}
+			
+			}
+			#infosRendezvous{
+				clear: left;
+			}
+		}
+	}	
+}
+
+
+
+
+#banniere{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	bordor-color: black;
+	img{
+		width:100%;
+		display:block;
+		border-style: solid;
+		border-color: #F2F2F2;
+		border-width: 1px 0px 0px 0px;
+	}
+	div{
+	    position: absolute;
+	    top: 25%;
+	    right: 5%;
+	    width: 50%;
+	    height: 100%;
+	    font-size: 11px;
+	    font-weight: bold;
+	    text-align: right;
+		.textItalic{
+			font-style: italic;
+		}
+		@media (min-width:768px) and (max-width: 980px)
+		{
+			font-size: 26px;
+		}
+	}
+}
+#Wrapper{
+	position: relative;
+	#form{
+		background-color: #F2F2F2;
+		width: 100%;
+
+		input{
+		 	box-sizing: border-box;
+		 	width: 100%;
+			height: 50px;
+			border-style: solid;
+			border-color: #F2F2F2;
+			text-align: left;
+			font-size: 14px;
+			padding-left:17%;
+			border-width: 1px 0px 1px 0px;
+		}
+		#town{
+		 	background-image:url('assets/townform.svg');
+				background-repeat:no-repeat;
+				background-position: 10%;
+				background-size: 20px 20px;
+		}
+		#date{
+		 	background-image:url('assets/calendarform.svg');
+				background-repeat:no-repeat;
+				background-position: 10%;
+				background-size: 20px 20px;
+		}
+		#reservation{
+		 	background-image:url('assets/searchform.svg');
+				background-repeat:no-repeat;
+				background-position: 10%;
+				background-size: 20px 20px;
+		}
+		#submitForm{
+			width: 100%;
+			height: 75px;
+			box-sizing: border-box;
+		 	background-color: grey;
+		 	text-align: center;
+
+		 	padding: (11rem/16) (11rem/16);
+		 	
+		 	button{
+		 		text-transform: uppercase;
+		 		width: 100%;	
+		 		height: 100%;
+		 		border: 0px;
+		 		font-size: 17px;
+		 		background-color: black;
+		 		color: white; 
+		 	}
+		}
+		@media (min-width:768px){
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 30px 0; 
+			background: rgba(0, 0, 0, .2);
+			opacity: 0,2;
+			font-size: 14px;
+
+			#reservation{
+				width:25%;
+				height: 60px;
+				padding-left:5%;
+				margin-left: 7%;
+				float: left;
+			}
+			#town{
+				width:20%;
+				height: 60px;
+				padding-left:5%;
+				float: left;
+			}
+			#date{
+				width:20%;
+				height: 60px;
+				padding-left:5%;
+				float: left;
+			}
+			#submitForm{
+				background-color: black;
+				width:20%;
+				height: 60px;
+				margin-left: 1%;
+				float: left;
+				button{
+			 		text-transform: uppercase;
+			 		width: 100%;	
+			 		height: 100%;
+			 		border: 0px;
+			 		font-size: 16px;
+			 		background-color: black;
+			 		color: white; 
+		 		}
+			}						
+		}
+	}	
+}
+
+
+
+#Prestations{
+	width: 100%;
+	font-size: 12px;
+	background-color: #f7f7f7;
+		&:after{
+		    content: "";
+		    display: table;
+		    clear: both;
+    	}
+	h2{
+		padding: 28px 0	;
+		text-align: center;
+		font-size: 16px;
+		.colorGold{
+			color: #CB9B2B;
+			font-style: italic;
+		}
+	}
+	#firstPresta{
+		width:100%;
+		#imgFirstPresta{
+			width:100%;
+			height: 100%;
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 10px;
+			padding-left: 5px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
+			}
+		}
+	}
+	#secondPresta{
+		width: 49%;
+		float: right;
+		#imgSecondPresta{
+			width:100%;
+			height: 100%;
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 10px;
+			padding-left: 5px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
+			}
+		}
+	}
+	#thirdPresta{
+		float: left;
+		width: 49%;
+		#imgThirdPresta{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 10px;
+			padding-left: 5px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
+			}
+		}
+	}
+	#fourthPresta{
+		width:100%;
+
+		#imgFourthPresta{
+			width:100%;
+			height: 100%;
+			margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 10px;
+			padding-left: 5px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
+			}
+		}
+	}
+	#fifthPresta{
+		width:100%;
+		#imgFifthPresta{
+			width:100%;
+			height: 100%;
+			margin-bottom: 5px;
+
+		}
+		p{
+			margin-bottom: 10px;
+			padding-left: 5px;
+			.colorGold{
+				color: #CB9B2B;
+				font-style: italic;
+			}
+		}
+	}
+	#allPresta{
+		width: 100%;
+		height: 75px;
+		box-sizing: border-box;
+	 	text-align: center;
+	 	margin-top: 5%;
+	 	padding: (11rem/16) (11rem/16);
+
+	 	button{
+	 		position: relative;
+	 		text-align: center;
+	 		border: 1px solid black;
+	 		width: 100%;	
+	 		height: 100%;
+	 		font-size: 13px;
+	 		background-color: #fff;
+	 		color: black; 
+	 		#arrowPresta{
+	 			position: absolute;
+	 			vertical-align: middle;
+	 			margin-left: 22px;
+	 			width: 20px;
+	 			height: 20px;
+	 		}
+	 	}
+	}
+	@media (min-width:768px) and (max-width: 980px){
+		h2{
+			font-size: 28px;
+		}
+		div{
+			p{
+				font-size: 20px;
+			}
+		}
+		#allPresta{
+			height: 150px;
+			padding: (11rem/8) (11rem/8);
+			button{
+	 			font-size: 26px;
+	 			color: black; 
+	 			background-color: #fff;				
+			}
+		}
+	}
+}
+
+#reseauxSociaux{
+	width: 100%;
+	font-size: 24px;
+	border: solid #f7f7f7;
+	border-width: 0px 0px 1px 0px;
+	text-align: center;
+	padding: 40px 0;
+
+	.colorGold{
+		color: #CB9B2B;
+	}
+
+	h1{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#imgfacebook{
+		width:10px;
+	}
+	img{
+		vertical-align: middle;
+		margin:15px;
+		width: 21px;
+	}
+	@media (min-width:768px) and (max-width: 980px){
+		font-size: 48px;
+		#imgfacebook{
+		width:20px;
+		}
+		img{
+			width: 40px;
+			margin: 30px;
+		}
+	}
+}
+#copyright{
+	padding: 5% 0 30% 0;
+	text-align: center;
+	font-size: 10px;
+	@media (min-width:768px) and (max-width: 980px){
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 980px){
+	header{
+		#userBanniere{
+			display: block;
+			background-color: #f7f7f7;
+			width:100%;
+			height: 38px;
+	    	#usersSection{
+	    		float:left;
+				padding-top:10px;
+				padding-left: 21px;
+				#askSalon,#Inscription{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 11px;
+				font-weight: 900;
+				}
+
+				#Inscription{
+					border: none;
+					margin-left:10px;
+					position: relative;
+					width:112px;
+					height: 20px;
+			 		color: white; 
+			 		background-color: #000;	
+			 		#arrowPresta{
+			 			position: absolute;
+			 			margin-left: 2px;
+			 			width: 10px;
+			 			height: 10px;
+			 		}		
+				}
+	    	}
+			#reseauxSection{
+				float:right;
+				padding-top:10px;
+				padding-right: 21px;
+				#telephone,.fb-like,#download,#connexion{
+					padding-left:30px;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 11px;
+					font-weight: 900;
+					img{
+						vertical-align: middle;
+						padding: 0px 5px;
+						width:13px;
+						height:20px;
+					}
+				}
+	    	}
+		}
+		#openMenu{
+			display:none;
+		}
+		#title{
+			position: absolute;
+			left: 5px;
+			z-index: 200;
+		}
+		#search{
+			position: absolute;
+			top:0px;
+			right:5px;
+			margin-top: 5%;
+			z-index: 200;		
+		}
+		#navMenu{
+			position: absolute;
+			width: 100%;
+			margin-top: 20px;
+			text-decoration: none;
+			z-index: 120;
+			> ul{
+				position: relative;
+			}
+			a{
+				text-decoration:none;
+				height: 100%;
+				line-height: 1.5625;
+				color: black;
+				vertical-align: middle;				
+			}
+			a:hover{
+				color:#CB9B2B;
+			}
+
+			.submenu {
+				display: none;
+    			transform: translateX(-50%);
+				.titlesubmenu{
+					float: left;
+					width:20%;
+					text-align: left;
+					padding-left:40px; 
+					padding-top: 35px;
+					padding-bottom: 30px;
+					font-size: 18px;
+					.sousMenuTitre{
+						color: #CB9B2B;
+					}
+
+				}
+				.titlesubmenu:nth-child(5){
+					clear: left;
+				}
+			}
+
+			.liens {
+				float:left;
+				width: 100%;
+				padding-top: 20px;
+				font-size: 13px;
+				li:last-child{
+					padding-top:10px;
+					text-decoration: underline;
+					a:hover{
+						color: #CB9B2B;
+					}
+				}
+			}
+
+			#openBeaute,#openCoiffure,#openMassage,#openForme{
+				display: inline-block;
+				padding-left: 40px;
+
+
+				#menuBeaute{
+					position:  absolute;
+					background-color: white;
+					border-style: solid;
+					border-color: #bebebe;
+					border-width: 1px;
+					width:800px;
+					left: 50%;
+					&.slide{
+				    display: block;
+			    	}
+				}
+				i{
+					display: none;
+				}
+
+			}
+			#planBeaute{
+				width:100%;
+				clear: both;
+				padding: 45px 0;
+				button{
+					width: 295px;
+					height: 50px;
+					color: white;
+					border: none;
+					text-align: left;
+					padding-left: 20px;
+					font-size: 13px;
+					background-color: black;
+					img{
+						width:15px;
+						height: 15px;        
+					}
+				}
+			}
+		}
+	}
+	#Wrapper #form #reservation {
+	    width: 17%;
+	    margin-left: 12%;
+	}
+	#Wrapper #form #submitForm {
+	    width: 15%;
+	}
+	#banniere{
+		#textBannMobile{
+			display: none;
+		}
+		div{
+		    position: absolute;
+		    right: 25%;
+		    width: 50%;
+		    top: 30%;
+		    height: 100%;
+		    font-size: 11px;
+		    font-weight: bold;
+		    text-align: center;
+		    font-size: 48px;
+		    p{
+		    	padding-top: 40px;
+		    	font-size: 18px;
+		    }
+		}
+	}
+	#infosClients{
+		ul{
+			padding: 50px 10%;
+			font-size: 11px;
+			height: 100%;
+			background-color: black;
+			text-align: center;
+
+			#infosAdresse, #infosRendezvous, #infosPrestation, #infosAvis{
+				width: 20%;
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+				padding-right: 30px;
+				img{
+					height: 100%;
+					width: 10%;
+					float: left;
+				}	
+				p{
+
+					margin-bottom: 20px;
+					width:85%;
+					font-size: 22px;
+					float: right;
+					color: #c4c4c4;
+					line-height: 22px;
+					.colorGold{
+						color: #CB9B2B;
+					}
+					.sizeNumber{
+						font-size: 36px;
+					}
+					.descriptionsInfos{
+						font-size: 14px;
+					}
+
+				}
+			
+			}
+			#infosRendezvous{
+				clear: left;
+			}
+		}
+	}	
+}
