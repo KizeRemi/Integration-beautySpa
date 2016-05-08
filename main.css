@@ -99,6 +99,8 @@ header {
 @media (max-width: 980px) {
   #avisSociete {
     display: none; }
+  #footer {
+    display: none; }
   #infosClients ul {
     margin: 25px 20px;
     font-size: 11px;
@@ -242,7 +244,7 @@ header {
         background-color: #fff; } }
 
 @media (max-width: 980px) {
-  #reservations {
+  #reservations, #paiement, #partenaires, #awardsBeauty, #slider-wrapper {
     display: none; } }
 
 #banniere {
@@ -666,11 +668,241 @@ header {
       text-align: center; }
       #reservations #ListesReservations ul {
         font-size: 18px;
-        padding-right: 80px;
+        padding-right: 40px;
         display: inline-block;
         text-align: left;
         margin-bottom: 70px; }
         #reservations #ListesReservations ul li {
-          padding: 10px; } }
+          padding: 10px; }
+  #footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    position: relative; }
+    #footer h2 {
+      font-size: 20px;
+      color: #CB9B2B;
+      padding-bottom: 30px; }
+    #footer #menuFooter {
+      text-align: center;
+      font-weight: bold; }
+      #footer #menuFooter ul {
+        font-size: 14px;
+        display: inline-block;
+        text-align: left;
+        padding-right: 80px; }
+        #footer #menuFooter ul li {
+          padding-bottom: 10px; }
+      #footer #menuFooter #footerRight {
+        padding-left: 120px;
+        font-size: 24px; }
+        #footer #menuFooter #footerRight div {
+          padding-top: 30px; }
+        #footer #menuFooter #footerRight .colorGold {
+          color: #CB9B2B; }
+        #footer #menuFooter #footerRight #imgfacebook {
+          width: 10px; }
+        #footer #menuFooter #footerRight img {
+          vertical-align: middle;
+          padding-top: 30px;
+          padding-right: 20px;
+          width: 21px; }
+        #footer #menuFooter #footerRight .app {
+          width: 90px;
+          padding-right: 5px;
+          height: 30px; }
+      #footer #menuFooter #footerLeft {
+        margin-left: 100px; }
+  #reseauxSociaux {
+    display: none; }
+  #listeCopyright {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 40px; }
+    #listeCopyright #copyright, #listeCopyright #paiement {
+      font-size: 12px;
+      padding: 0;
+      padding-left: 20px;
+      padding-right: 140px;
+      float: left; }
+      #listeCopyright #copyright img, #listeCopyright #paiement img {
+        vertical-align: middle;
+        margin-left: 5px; }
+      #listeCopyright #copyright img:nth-child(1), #listeCopyright #paiement img:nth-child(1) {
+        margin-left: 10px; }
+    #listeCopyright #partenaires {
+      font-size: 12px;
+      float: right; }
+      #listeCopyright #partenaires span {
+        margin-right: 10px; }
+      #listeCopyright #partenaires a {
+        margin-right: 10px;
+        text-decoration: none;
+        height: 100%;
+        line-height: 1.5625;
+        color: black;
+        vertical-align: middle; }
+      #listeCopyright #partenaires a:hover {
+        color: #CB9B2B; }
+  #awardsBeauty {
+    display: inline-block; }
+    #awardsBeauty h2 {
+      width: 45%;
+      font-size: 48px;
+      padding: 80px;
+      margin: auto;
+      text-align: center; }
+      #awardsBeauty h2 .colorGold {
+        color: #CB9B2B; }
+    #awardsBeauty #listAwards {
+      width: 65%;
+      margin: auto;
+      margin-bottom: 100px; }
+      #awardsBeauty #listAwards #logoAwards {
+        float: left;
+        margin-right: 80px; }
+        #awardsBeauty #listAwards #logoAwards img {
+          padding-bottom: 30px;
+          display: block; }
+      #awardsBeauty #listAwards p {
+        width: 66%;
+        color: #848484;
+        font-size: 14px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        line-height: 1.5;
+        text-align: left; }
+      #awardsBeauty #listAwards p::first-letter {
+        color: #CB9B2B;
+        text-transform: capitalize;
+        font-size: 600%;
+        font-weight: bold;
+        display: block;
+        float: left; }
+  #slider-wrapper {
+    max-width: 960px;
+    width: 100%;
+    height: 580px;
+    margin: 3px auto;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden; }
+    #slider-wrapper h2 {
+      font-size: 48px;
+      padding: 60px 40px; }
+      #slider-wrapper h2 .colorGold {
+        color: #CB9B2B; }
+    #slider-wrapper .slider-arrow {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      #slider-wrapper .slider-arrow .arrow_left {
+        position: absolute;
+        z-index: 1000;
+        left: 0px;
+        bottom: 20%; }
+      #slider-wrapper .slider-arrow .arrow_right {
+        position: absolute;
+        z-index: 1000;
+        right: 0px;
+        bottom: 20%; }
+    #slider-wrapper .inner-wrapper {
+      max-width: 960px;
+      width: 100%;
+      height: 380px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 170px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      background-color: white; }
+      #slider-wrapper .inner-wrapper #s1, #slider-wrapper .inner-wrapper #s2, #slider-wrapper .inner-wrapper #s3 {
+        padding: 6px;
+        background: black;
+        position: absolute;
+        right: 45%;
+        bottom: 0px;
+        border-radius: 20px;
+        opacity: 0.3;
+        cursor: pointer;
+        z-index: 999; }
+      #slider-wrapper .inner-wrapper #s1 {
+        margin-right: 80px; }
+      #slider-wrapper .inner-wrapper #s2 {
+        margin-right: 60px; }
+      #slider-wrapper .inner-wrapper #s3 {
+        margin-right: 40px; }
+      #slider-wrapper .inner-wrapper .control {
+        display: none; }
+      #slider-wrapper .inner-wrapper #s1:hover, #slider-wrapper .inner-wrapper #s2:hover, #slider-wrapper .inner-wrapper #s3:hover, #slider-wrapper .inner-wrapper #s4:hover {
+        opacity: .50; }
+      #slider-wrapper .inner-wrapper #Slide1:checked ~ .overflow-wrapper {
+        margin-left: 0%; }
+      #slider-wrapper .inner-wrapper #Slide2:checked ~ .overflow-wrapper {
+        margin-left: -102.5%; }
+      #slider-wrapper .inner-wrapper #Slide3:checked ~ .overflow-wrapper {
+        margin-left: -205%; }
+      #slider-wrapper .inner-wrapper #Slide1:checked + #s1 {
+        opacity: 1; }
+      #slider-wrapper .inner-wrapper #Slide2:checked + #s2 {
+        opacity: 1; }
+      #slider-wrapper .inner-wrapper #Slide3:checked + #s3 {
+        opacity: 1; }
+      #slider-wrapper .inner-wrapper .overflow-wrapper {
+        width: 500%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        #slider-wrapper .inner-wrapper .overflow-wrapper .slide {
+          width: 100%;
+          margin: auto; }
+          #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul {
+            width: 6%;
+            font-size: 18px;
+            padding-right: 40px;
+            float: left;
+            text-align: left;
+            margin-bottom: 70px; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li {
+              padding: 4px;
+              padding-left: 25px;
+              width: 100%; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(1) {
+              font-size: 14px; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(2) {
+              font-size: 14px;
+              color: #848484; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(3) {
+              font-size: 18px;
+              margin-top: 15px;
+              font-weight: bold;
+              border-left: 2px solid  #CB9B2B; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(4) {
+              font-size: 16px;
+              border-left: 2px solid  #CB9B2B; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(5) {
+              font-size: 16px;
+              padding-top: 10px;
+              color: #CB9B2B;
+              font-weight: bold;
+              border-left: 2px solid  #CB9B2B; }
+            #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(6) {
+              margin-top: 15px;
+              font-size: 14px;
+              line-height: 1.5; } }
 
 /*# sourceMappingURL=main.css.map */

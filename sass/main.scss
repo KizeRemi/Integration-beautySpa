@@ -42,6 +42,7 @@ header{
 	}
 }
 
+
 @media (max-width: 980px){
 	#banniere #textBannDesktop{
 		display: none;
@@ -76,8 +77,8 @@ header{
 					text-decoration:none;
 					height: 100%;
 					line-height: 1.5625;
-						color: black;
-						vertical-align: middle;
+					color: black;
+					vertical-align: middle;
 				}
 				i{
 					box-sizing: border-box;
@@ -128,6 +129,9 @@ header{
 		}
 	}
 	#avisSociete{
+		display: none;
+	}
+	#footer{
 		display: none;
 	}
 	#infosClients{
@@ -322,7 +326,7 @@ header{
 			}
 		}
 	}
-	#reservations{
+	#reservations,#paiement,#partenaires,#awardsBeauty, #slider-wrapper{
 		display: none;
 	}
 }
@@ -872,7 +876,7 @@ header{
 		
 			ul{
 				font-size: 18px;
-				padding-right: 80px;
+				padding-right: 40px;
 				display: inline-block;
 				text-align: left;
 				margin-bottom: 70px;
@@ -880,6 +884,298 @@ header{
 					padding:10px;
 				}
 			}			
+		}
+	}
+	#footer{
+		width:100%;
+		background-color: #f7f7f7;
+		color: black;
+		padding-top: 40px;
+		padding-bottom: 80px;
+		position: relative;
+		h2{
+			font-size: 20px;
+			color: #CB9B2B;
+			padding-bottom:30px;
+		}
+		#menuFooter
+		{	
+			text-align: center;
+			font-weight: bold;
+			ul{
+				font-size: 14px;
+				display: inline-block;
+				text-align: left;
+				padding-right: 80px;
+				li{
+					padding-bottom:10px;
+				}
+			}	
+			#footerRight{
+				padding-left: 120px;
+				font-size: 24px;
+				div{
+					padding-top:30px;
+				}
+				.colorGold{
+					color: #CB9B2B;
+				}
+				#imgfacebook{
+					width:10px;
+				}
+				img{
+					vertical-align: middle;
+					padding-top:30px;
+					padding-right:20px;
+					width: 21px;
+				}
+				.app{
+					width: 90px;
+					padding-right:5px;
+					height: 30px;
+				}
+			}	
+			#footerLeft{
+				margin-left: 100px;
+			}	
+		}
+	}
+	#reseauxSociaux{
+		display: none;
+	}
+	#listeCopyright{
+		background-color: #f7f7f7;
+		width:100%;
+		height:40px;
+		#copyright,#paiement{
+			img{
+				vertical-align: middle;
+				margin-left: 5px;
+			}
+			img:nth-child(1){
+				margin-left: 10px;
+			}
+			font-size: 12px;
+			padding:0;
+			padding-left:20px;
+			padding-right: 140px;
+			float:left;
+		}
+		#partenaires{
+			font-size: 12px;
+			float:right;
+			span{
+				margin-right: 10px;
+			}
+			a{
+				margin-right: 10px;
+				text-decoration:none;
+				height: 100%;
+				line-height: 1.5625;
+				color: black;
+				vertical-align: middle;
+			}
+			a:hover{
+				color:#CB9B2B;
+			}
+		}
+	}
+	#awardsBeauty{
+		display: inline-block;
+		h2{
+			width: 45%;
+			font-size: 48px;
+			padding:80px;
+			margin: auto;
+			text-align: center;
+			.colorGold{
+				color: #CB9B2B;
+			}
+		}
+		#listAwards{
+			width:65%;
+			margin: auto;
+			margin-bottom: 100px;
+			#logoAwards{
+				float: left;
+				margin-right: 80px;
+				img{
+					padding-bottom: 30px;
+					display: block;
+				}
+			}
+			p{
+				width: 66%;
+				color: #848484;
+				font-size: 14px;
+			    -webkit-column-count: 2;
+			    -moz-column-count: 2;
+			    column-count: 2; 
+			    -webkit-column-gap: 40px;
+			    -moz-column-gap: 40px;
+			    column-gap: 40px;
+			    line-height: 1.5;
+			    text-align: left;
+
+			}
+			p::first-letter{
+				color: #CB9B2B;
+			    text-transform:capitalize;
+			    font-size: 600%;
+			    font-weight: bold;
+			    display: block;
+			    float: left;
+			}
+		}
+	}
+	#slider-wrapper {
+		h2{
+			font-size: 48px;
+			padding:60px 40px;
+			.colorGold{
+				color: #CB9B2B;
+			}
+		}
+		max-width: 960px;
+		width: 100%;
+		height: 580px;
+		margin: 3px auto;
+		position: relative;
+		margin-bottom: 0px;
+		overflow: hidden;
+		.slider-arrow{
+			position: absolute;
+			width: 100%;
+			height: 100%;		
+			.arrow_left{
+				position: absolute;
+				z-index:1000;
+				left: 0px;
+				bottom: 20%;
+			}
+			.arrow_right{
+				position: absolute;
+				z-index:1000;
+				right: 0px;
+				bottom: 20%;
+			}
+		}
+	    .inner-wrapper{
+			max-width: 960px;
+			width: 100%;
+			height: 380px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 170px;
+			margin-bottom: 0px;
+			overflow: hidden;
+			background-color: white;
+			#s1, #s2, #s3{
+				padding: 6px;
+				background: black;
+				position: absolute;
+				right: 45%;
+				bottom: 0px;
+				border-radius: 20px;
+				opacity: 0.3;
+				cursor: pointer;
+				z-index: 999;
+			}			
+			#s1{
+				margin-right: 80px;
+			}
+			#s2{
+				margin-right: 60px;
+			}
+			#s3{
+				margin-right: 40px;
+			}
+			.control{
+		  		display: none;
+			}
+			#s1:hover, #s2:hover, #s3:hover, #s4:hover {
+		  		opacity: .50;
+			}
+			#Slide1:checked ~ .overflow-wrapper {
+				margin-left: 0%;
+			}
+
+			#Slide2:checked ~ .overflow-wrapper {
+				margin-left: -102.5%;
+			}
+
+			#Slide3:checked ~ .overflow-wrapper {
+				margin-left: -205%;
+			}
+			#Slide1:checked + #s1 {
+				opacity: 1;
+			}
+			#Slide2:checked + #s2 {
+				opacity: 1;
+			}
+			#Slide3:checked + #s3 {
+				opacity: 1;
+			}
+			.overflow-wrapper {
+				width: 500%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow-y: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				.slide{
+					width:100%;
+					margin:auto;
+					ul{
+						width:6%;
+						font-size: 18px;
+						padding-right: 40px;
+						float:left;
+						text-align: left;
+						margin-bottom: 70px;
+						li{
+							padding:4px;
+							padding-left: 25px;
+							width:100%;
+						}
+						li:nth-child(1){
+							font-size: 14px;
+						}
+						li:nth-child(2){
+							font-size: 14px;
+							color: #848484;
+						}
+						li:nth-child(3){
+							font-size: 18px;
+							margin-top:15px;
+							font-weight: bold;
+							border-left: 2px solid  #CB9B2B;
+						}
+						li:nth-child(4){
+							font-size: 16px;
+							border-left: 2px solid  #CB9B2B;
+						}
+						li:nth-child(5){
+							font-size: 16px;
+							padding-top:10px;
+							color: #CB9B2B;
+							font-weight: bold;
+							border-left: 2px solid  #CB9B2B;
+						}
+						li:nth-child(6){
+							margin-top:15px;
+							font-size: 14px;
+							line-height: 1.5;
+						}
+					}	
+				}
+			}
 		}
 	}
 }
