@@ -97,6 +97,8 @@ header {
       font-size: 30px; } }
 
 @media (max-width: 980px) {
+  #avisSociete {
+    display: none; }
   #infosClients ul {
     margin: 25px 20px;
     font-size: 11px;
@@ -124,7 +126,124 @@ header {
         #infosClients ul #infosAdresse p .sizeNumber, #infosClients ul #infosRendezvous p .sizeNumber, #infosClients ul #infosPrestation p .sizeNumber, #infosClients ul #infosAvis p .sizeNumber {
           font-size: 18px; }
     #infosClients ul #infosRendezvous {
-      clear: left; } }
+      clear: left; }
+  #Prestations {
+    width: 100%;
+    font-size: 12px;
+    background-color: #f7f7f7; }
+    #Prestations:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #Prestations h2 {
+      padding: 28px 0;
+      text-align: center;
+      font-size: 16px; }
+      #Prestations h2 .colorGold {
+        color: #CB9B2B;
+        font-style: italic; }
+    #Prestations #firstPresta {
+      width: 100%; }
+      #Prestations #firstPresta #imgFirstPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #firstPresta p {
+        margin-bottom: 10px;
+        padding-left: 5px; }
+        #Prestations #firstPresta p .colorGold {
+          color: #CB9B2B;
+          font-style: italic; }
+    #Prestations #secondPresta {
+      width: 49%;
+      float: right; }
+      #Prestations #secondPresta #imgSecondPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #secondPresta p {
+        margin-bottom: 10px;
+        padding-left: 5px; }
+        #Prestations #secondPresta p .colorGold {
+          color: #CB9B2B;
+          font-style: italic; }
+    #Prestations #thirdPresta {
+      float: left;
+      width: 49%; }
+      #Prestations #thirdPresta #imgThirdPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #thirdPresta p {
+        margin-bottom: 10px;
+        padding-left: 5px; }
+        #Prestations #thirdPresta p .colorGold {
+          color: #CB9B2B;
+          font-style: italic; }
+    #Prestations #fourthPresta {
+      width: 100%; }
+      #Prestations #fourthPresta #imgFourthPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #fourthPresta p {
+        margin-bottom: 10px;
+        padding-left: 5px; }
+        #Prestations #fourthPresta p .colorGold {
+          color: #CB9B2B;
+          font-style: italic; }
+    #Prestations #fifthPresta {
+      width: 100%; }
+      #Prestations #fifthPresta #imgFifthPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #fifthPresta p {
+        margin-bottom: 10px;
+        padding-left: 5px; }
+        #Prestations #fifthPresta p .colorGold {
+          color: #CB9B2B;
+          font-style: italic; }
+    #Prestations #sixthPresta {
+      display: none; }
+    #Prestations #allPresta {
+      width: 100%;
+      height: 75px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 5%;
+      padding: 0.6875rem 0.6875rem; }
+      #Prestations #allPresta button {
+        position: relative;
+        text-align: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        background-color: #fff;
+        color: black; }
+        #Prestations #allPresta button #arrowPresta {
+          position: absolute;
+          vertical-align: middle;
+          margin-left: 22px;
+          width: 20px;
+          height: 20px; } }
+  @media (max-width: 980px) and (min-width: 768px) and (max-width: 980px) {
+    #Prestations h2 {
+      font-size: 28px; }
+    #Prestations div p {
+      font-size: 20px; }
+    #Prestations #allPresta {
+      height: 150px;
+      padding: 1.375rem 1.375rem; }
+      #Prestations #allPresta button {
+        font-size: 26px;
+        color: black;
+        background-color: #fff; } }
+
+@media (max-width: 980px) {
+  #reservations {
+    display: none; } }
 
 #banniere {
   width: 100%;
@@ -237,118 +356,6 @@ header {
             background-color: black;
             color: white; } }
 
-#Prestations {
-  width: 100%;
-  font-size: 12px;
-  background-color: #f7f7f7; }
-  #Prestations:after {
-    content: "";
-    display: table;
-    clear: both; }
-  #Prestations h2 {
-    padding: 28px 0;
-    text-align: center;
-    font-size: 16px; }
-    #Prestations h2 .colorGold {
-      color: #CB9B2B;
-      font-style: italic; }
-  #Prestations #firstPresta {
-    width: 100%; }
-    #Prestations #firstPresta #imgFirstPresta {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 5px; }
-    #Prestations #firstPresta p {
-      margin-bottom: 10px;
-      padding-left: 5px; }
-      #Prestations #firstPresta p .colorGold {
-        color: #CB9B2B;
-        font-style: italic; }
-  #Prestations #secondPresta {
-    width: 49%;
-    float: right; }
-    #Prestations #secondPresta #imgSecondPresta {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 5px; }
-    #Prestations #secondPresta p {
-      margin-bottom: 10px;
-      padding-left: 5px; }
-      #Prestations #secondPresta p .colorGold {
-        color: #CB9B2B;
-        font-style: italic; }
-  #Prestations #thirdPresta {
-    float: left;
-    width: 49%; }
-    #Prestations #thirdPresta #imgThirdPresta {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 5px; }
-    #Prestations #thirdPresta p {
-      margin-bottom: 10px;
-      padding-left: 5px; }
-      #Prestations #thirdPresta p .colorGold {
-        color: #CB9B2B;
-        font-style: italic; }
-  #Prestations #fourthPresta {
-    width: 100%; }
-    #Prestations #fourthPresta #imgFourthPresta {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 5px; }
-    #Prestations #fourthPresta p {
-      margin-bottom: 10px;
-      padding-left: 5px; }
-      #Prestations #fourthPresta p .colorGold {
-        color: #CB9B2B;
-        font-style: italic; }
-  #Prestations #fifthPresta {
-    width: 100%; }
-    #Prestations #fifthPresta #imgFifthPresta {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 5px; }
-    #Prestations #fifthPresta p {
-      margin-bottom: 10px;
-      padding-left: 5px; }
-      #Prestations #fifthPresta p .colorGold {
-        color: #CB9B2B;
-        font-style: italic; }
-  #Prestations #allPresta {
-    width: 100%;
-    height: 75px;
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 5%;
-    padding: 0.6875rem 0.6875rem; }
-    #Prestations #allPresta button {
-      position: relative;
-      text-align: center;
-      border: 1px solid black;
-      width: 100%;
-      height: 100%;
-      font-size: 13px;
-      background-color: #fff;
-      color: black; }
-      #Prestations #allPresta button #arrowPresta {
-        position: absolute;
-        vertical-align: middle;
-        margin-left: 22px;
-        width: 20px;
-        height: 20px; }
-  @media (min-width: 768px) and (max-width: 980px) {
-    #Prestations h2 {
-      font-size: 28px; }
-    #Prestations div p {
-      font-size: 20px; }
-    #Prestations #allPresta {
-      height: 150px;
-      padding: 1.375rem 1.375rem; }
-      #Prestations #allPresta button {
-        font-size: 26px;
-        color: black;
-        background-color: #fff; } }
-
 #reseauxSociaux {
   width: 100%;
   font-size: 24px;
@@ -431,8 +438,12 @@ header {
     display: none; }
   header #title {
     position: absolute;
-    left: 5px;
-    z-index: 200; }
+    left: 20px;
+    top: 50px;
+    z-index: 200;
+    width: 460px;
+    text-align: left;
+    height: 70px; }
   header #search {
     position: absolute;
     top: 0px;
@@ -561,6 +572,105 @@ header {
         #infosClients ul #infosAdresse p .descriptionsInfos, #infosClients ul #infosRendezvous p .descriptionsInfos, #infosClients ul #infosPrestation p .descriptionsInfos, #infosClients ul #infosAvis p .descriptionsInfos {
           font-size: 14px; }
     #infosClients ul #infosRendezvous {
-      clear: left; } }
+      clear: left; }
+  #avisSociete {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0; }
+    #avisSociete img {
+      margin-left: 37px;
+      vertical-align: middle; }
+  #Prestations {
+    width: 100%;
+    font-size: 12px;
+    background-color: #f7f7f7;
+    margin: auto; }
+    #Prestations:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #Prestations p {
+      margin: 12px 0 15px 0;
+      padding-left: 5px;
+      font-size: 18px; }
+      #Prestations p .colorGold {
+        font-style: italic; }
+    #Prestations #grille {
+      margin: auto;
+      width: 952px; }
+      #Prestations #grille h2 {
+        padding: 115px 0;
+        text-align: center;
+        font-size: 48px; }
+        #Prestations #grille h2 .colorGold {
+          font-style: italic; }
+      #Prestations #grille #firstPresta #imgFirstPresta {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px; }
+      #Prestations #grille #sousgrille {
+        float: left;
+        width: 49%; }
+      #Prestations #grille #fourthPresta {
+        width: 49%;
+        float: right;
+        height: 423px; }
+        #Prestations #grille #fourthPresta #imgFourthPresta {
+          width: 100%; }
+      #Prestations #grille #fifthPresta {
+        float: left; }
+        #Prestations #grille #fifthPresta #imgFifthPresta {
+          width: 629px;
+          height: 100%;
+          margin-bottom: 5px; }
+      #Prestations #grille #sixthPresta {
+        clear: right;
+        float: right; }
+        #Prestations #grille #sixthPresta #imgsixthPresta {
+          width: 305px;
+          height: 100%;
+          margin-bottom: 5px; }
+      #Prestations #grille #allPresta {
+        clear: both;
+        box-sizing: border-box;
+        padding: 2.75rem 2.75rem;
+        text-align: center; }
+        #Prestations #grille #allPresta button {
+          position: relative;
+          border: 1px solid black;
+          width: 295px;
+          height: 50px;
+          font-size: 13px;
+          background-color: #000;
+          color: white; }
+          #Prestations #grille #allPresta button #arrowPresta {
+            position: absolute;
+            vertical-align: middle;
+            margin-left: 22px;
+            width: 20px;
+            height: 20px; }
+  #reservations {
+    width: 100%;
+    background-color: black;
+    color: white; }
+    #reservations h2 {
+      text-align: center;
+      font-size: 48px;
+      padding: 80px; }
+      #reservations h2 .colorGold {
+        color: #CB9B2B; }
+    #reservations #ListesReservations {
+      width: 70%;
+      margin: auto;
+      text-align: center; }
+      #reservations #ListesReservations ul {
+        font-size: 18px;
+        padding-right: 80px;
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 70px; }
+        #reservations #ListesReservations ul li {
+          padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
