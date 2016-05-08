@@ -128,6 +128,22 @@ header{
 			}
 		}
 	}
+	#formSearch{
+		position: absolute;
+		z-index: 999;
+		left:-1200px;
+		top:0px;
+	    -webkit-transition: right 0.5s;
+		transition: right 0.5s;
+		#searchInput{
+			width:200px;
+			height:35px;
+			padding-left:5%;
+		}
+		&.opened2{
+	    	left:70px;
+		}
+	}
 	#avisSociete{
 		display: none;
 	}
@@ -798,10 +814,18 @@ header{
 					height: 100%;
 					margin-bottom: 5px;
 				}
+				.colorGold{
+					color: #CB9B2B;
+				}
 			}
 			#sousgrille{
 				float: left;
 				width: 49%;
+			}
+			#secondPresta, #thirdPresta{
+				.colorGold{
+					color: #CB9B2B;
+				}
 			}
 			#fourthPresta{
 				width: 49%;
@@ -809,6 +833,9 @@ header{
 				height: 423px;
 				#imgFourthPresta{
 					width:100%;
+				}
+				.colorGold{
+					color: #CB9B2B;
 				}
 			}
 			#fifthPresta{
@@ -819,6 +846,9 @@ header{
 					margin-bottom: 5px;
 
 				}
+				.colorGold{
+					color: #CB9B2B;
+				}
 			}
 			#sixthPresta{
 				clear: right;
@@ -827,7 +857,9 @@ header{
 					width:305px;
 					height: 100%;
 					margin-bottom: 5px;
-
+				}
+				.colorGold{
+					color: #CB9B2B;
 				}
 			}
 			#allPresta{
@@ -876,12 +908,21 @@ header{
 		
 			ul{
 				font-size: 18px;
-				padding-right: 40px;
+				padding-right: 50px;
 				display: inline-block;
 				text-align: left;
 				margin-bottom: 70px;
 				li{
 					padding:10px;
+				}
+				a{
+					text-decoration: none;
+					color: white;
+					font-weight: bold;
+					vertical-align: middle;
+				}
+				a:hover{
+					color:#CB9B2B;
 				}
 			}			
 		}
@@ -909,6 +950,13 @@ header{
 				padding-right: 80px;
 				li{
 					padding-bottom:10px;
+					a{
+						text-decoration: none;
+						color: black;
+					}
+					a:hover{
+						color:#CB9B2B;
+					}
 				}
 			}	
 			#footerRight{
@@ -1167,6 +1215,9 @@ header{
 							color: #CB9B2B;
 							font-weight: bold;
 							border-left: 2px solid  #CB9B2B;
+							img{
+								padding-left: 10px;
+							}
 						}
 						li:nth-child(6){
 							margin-top:15px;
@@ -1176,6 +1227,20 @@ header{
 					}	
 				}
 			}
+		}
+	}
+	#search{
+		display: none;
+	}
+	#formSearch{
+		position: absolute;
+		z-index: 999;
+		right:20px;
+		top:50px;
+		#searchInput{
+			width:200px;
+			height:30px;
+			padding-left:5%;
 		}
 	}
 }

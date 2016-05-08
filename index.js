@@ -6,6 +6,14 @@ function displayMenu(){
     elem.classList.toggle("opened");
 }
 
+var clickSearch = document.getElementById("search"); 
+clickSearch.addEventListener("click", displaySearch, false); 
+
+function displaySearch(){
+	var elem = document.getElementById("formSearch");
+    elem.classList.toggle("opened2");
+}
+
 
 var clickBeaute = document.getElementById("openBeaute"); 
 clickBeaute.addEventListener("click", displayBeaute, false); 

@@ -97,6 +97,19 @@ header {
       font-size: 30px; } }
 
 @media (max-width: 980px) {
+  #formSearch {
+    position: absolute;
+    z-index: 999;
+    left: -1200px;
+    top: 0px;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s; }
+    #formSearch #searchInput {
+      width: 200px;
+      height: 35px;
+      padding-left: 5%; }
+    #formSearch.opened2 {
+      left: 70px; }
   #avisSociete {
     display: none; }
   #footer {
@@ -611,21 +624,29 @@ header {
         width: 100%;
         height: 100%;
         margin-bottom: 5px; }
+      #Prestations #grille #firstPresta .colorGold {
+        color: #CB9B2B; }
       #Prestations #grille #sousgrille {
         float: left;
         width: 49%; }
+      #Prestations #grille #secondPresta .colorGold, #Prestations #grille #thirdPresta .colorGold {
+        color: #CB9B2B; }
       #Prestations #grille #fourthPresta {
         width: 49%;
         float: right;
         height: 423px; }
         #Prestations #grille #fourthPresta #imgFourthPresta {
           width: 100%; }
+        #Prestations #grille #fourthPresta .colorGold {
+          color: #CB9B2B; }
       #Prestations #grille #fifthPresta {
         float: left; }
         #Prestations #grille #fifthPresta #imgFifthPresta {
           width: 629px;
           height: 100%;
           margin-bottom: 5px; }
+        #Prestations #grille #fifthPresta .colorGold {
+          color: #CB9B2B; }
       #Prestations #grille #sixthPresta {
         clear: right;
         float: right; }
@@ -633,6 +654,8 @@ header {
           width: 305px;
           height: 100%;
           margin-bottom: 5px; }
+        #Prestations #grille #sixthPresta .colorGold {
+          color: #CB9B2B; }
       #Prestations #grille #allPresta {
         clear: both;
         box-sizing: border-box;
@@ -668,12 +691,19 @@ header {
       text-align: center; }
       #reservations #ListesReservations ul {
         font-size: 18px;
-        padding-right: 40px;
+        padding-right: 50px;
         display: inline-block;
         text-align: left;
         margin-bottom: 70px; }
         #reservations #ListesReservations ul li {
           padding: 10px; }
+        #reservations #ListesReservations ul a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          vertical-align: middle; }
+        #reservations #ListesReservations ul a:hover {
+          color: #CB9B2B; }
   #footer {
     width: 100%;
     background-color: #f7f7f7;
@@ -695,6 +725,11 @@ header {
         padding-right: 80px; }
         #footer #menuFooter ul li {
           padding-bottom: 10px; }
+          #footer #menuFooter ul li a {
+            text-decoration: none;
+            color: black; }
+          #footer #menuFooter ul li a:hover {
+            color: #CB9B2B; }
       #footer #menuFooter #footerRight {
         padding-left: 120px;
         font-size: 24px; }
@@ -900,9 +935,22 @@ header {
               color: #CB9B2B;
               font-weight: bold;
               border-left: 2px solid  #CB9B2B; }
+              #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(5) img {
+                padding-left: 10px; }
             #slider-wrapper .inner-wrapper .overflow-wrapper .slide ul li:nth-child(6) {
               margin-top: 15px;
               font-size: 14px;
-              line-height: 1.5; } }
+              line-height: 1.5; }
+  #search {
+    display: none; }
+  #formSearch {
+    position: absolute;
+    z-index: 999;
+    right: 20px;
+    top: 50px; }
+    #formSearch #searchInput {
+      width: 200px;
+      height: 30px;
+      padding-left: 5%; } }
 
 /*# sourceMappingURL=main.css.map */
